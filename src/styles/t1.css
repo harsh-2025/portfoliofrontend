@@ -1,0 +1,335 @@
+/* .app-container {
+  max-width: 1300px;
+  margin: 20px auto; 
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h2 {
+  color: #333;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggestion-item:hover {
+  background-color: #e0e0e0;
+}
+.selected-company {
+  margin: 10px 0;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.stock-table th, .stock-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.stock-table th {
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+.profit, .loss {
+  color: #fff;
+  font-weight: bold;
+}
+
+.profit {
+  background-color: #4caf50;
+}
+
+.loss {
+  background-color: #f44336;
+}
+
+button.delete {
+  background-color: #f44336;
+}
+
+button.delete:hover {
+  background-color: #d32f2f;
+}
+
+button.increase {
+  background-color: #00a859;
+}
+
+button.increase:hover {
+  background-color: #007542;
+}
+
+button.decrease {
+  background-color: #ff9800;
+}
+
+button.decrease:hover {
+  background-color: #e68a00;
+} */
+
+
+/* Basic styling for the app container */
+.app-container {
+  max-width: 1300px;
+  margin: 20px auto; /* Adjust the margin to center horizontally */
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles */
+h2 {
+  color: #333;
+}
+
+/* Search input styling */
+.search-input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #4caf50;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Suggestions list styles */
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.suggestion-item {
+  padding: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.suggestion-item:hover {
+  background-color: #e0e0e0;
+}
+
+/* Selected company styles */
+.selected-company {
+  margin: 10px 0;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Table styles */
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.stock-table th, .stock-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.stock-table th {
+  background-color: #f2f2f2;
+}
+
+/* Action buttons styling */
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Add transitions to the entire table */
+tbody tr {
+  transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+/* Add these styles for profit and loss colors */
+.profit, .loss {
+  color: #fff;
+  font-weight: bold;
+}
+
+.profit {
+  background-color: #4caf50;
+}
+
+.loss {
+  background-color: #f44336;
+}
+
+/* Improved button styles */
+button.delete {
+  background-color: #f44336;
+}
+
+button.delete:hover {
+  background-color: #d32f2f;
+}
+
+button.increase {
+  background-color: #00a859;
+}
+
+button.increase:hover {
+  background-color: #007542;
+}
+
+button.decrease {
+  background-color: #ff9800;
+}
+
+button.decrease:hover {
+  background-color: #e68a00;
+}
+
+/* Responsive Styles for Tablets */
+@media screen and (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+
+  .suggestion-item {
+    padding: 10px;
+  }
+
+  .stock-table th, .stock-table td {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+}
+
+/* Responsive Styles for Mobile Devices */
+/* Responsive Styles for Mobile Devices */
+@media screen and (max-width: 480px) {
+  .app-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    text-align: center;
+  }
+
+  .search-input {
+    font-size: 14px;
+  }
+
+  .suggestion-item {
+    padding: 10px;
+  }
+
+  .stock-table th, .stock-table td {
+    padding: 8px;
+  }
+
+  button {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .suggestions-list {
+    max-height: 100px;
+  }
+
+  .selected-company {
+    padding: 8px;
+    margin: 10px 0;
+  }
+
+  form {
+    margin-top: 10px;
+  }
+}
+

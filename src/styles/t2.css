@@ -1,0 +1,134 @@
+/* Global styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  /* Container */
+  .app-container {
+    max-width: 960px; /* Adjust for smaller screens */
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings */
+  h2 {
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  /* Search section */
+  .search-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #28a745; /* Green for primary color */
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .suggestions-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .suggestion-item {
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Selected company section */
+  .selected-company {
+    margin-top: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Form */
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  /* Stock table */
+  .stock-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .stock-table th,
+  .stock-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .stock-table th {
+    background-color: #f2f2f2;
+    font-weight: 600;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #28a745; /* Green for primary color */
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 14px;
+  }
+  
+  button:hover {
+    background-color: #22863a; /* Darker green on hover */
+  }
+  
+  /* Responsive table for mobile */
+  @media (max-width: 768px) {
+    .stock-table th,
+    .stock-table td {
+      display: block;
+      text-align: center;
+    }
+  
+    .stock-table td:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Profit/Loss cells */
+  .profit {
+    color: #fff;
+    font-weight: bold;
+    background-color: #28a745; /* Green for profit */
+  }
+  
+  .loss {
+    color: #fff;
+    font-weight: bold;
+    background-color: #dc3545; /* Red for loss */
+  }
+  
+  

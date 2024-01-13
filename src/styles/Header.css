@@ -1,0 +1,81 @@
+/* 
+
+.app-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .left-section h1 {
+    margin: 0;
+  }
+  
+  .middle-section nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  .right-section a {
+    color: white;
+    text-decoration: none;
+  }
+   */
+
+   /* Header.css */
+
+.app-header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section h1 {
+  margin: 0;
+}
+
+.middle-section nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+}
+
+.right-section p {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.right-section-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.right-section button:hover {
+  background-color: #45a049;
+}
+
+.right-section a {
+  color: white;
+  text-decoration: none;
+}
