@@ -504,6 +504,7 @@ const existingStock = stocks.find((stock) => stock.stockSymbol === stockSymbol);
         toast.warning("The stock exist in your portfolio");
         return;
       }
+      else{
       const response = await axios.post("https://stockbackend-uyx3.onrender.com/addStock", {
         username: user.username,
         stockSymbol,
@@ -531,6 +532,7 @@ const existingStock = stocks.find((stock) => stock.stockSymbol === stockSymbol);
       document.getElementById("searchInput").value = "";
 
       toast.success("Stock added successfully!");
+      }
     } catch (error) {
       toast.error(error.response?.data.error || "An error occurred");
     }
